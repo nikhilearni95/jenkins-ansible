@@ -1,18 +1,8 @@
 ---
-- hosts: webservers 
-  become: True
+- hosts: UAT
   tasks:
-    - name: Install packages
-      yum:
-        name: "httpd"
-        state: "present"
-    - name: Start Apache server
-      service:
-        name: httpd
-        state: started
-        enabled: True
-    - name: Deploy static website
-      copy:
-        src: index.html
-        dest: /var/www/html/
+  - name: Creating an empty file
+    file:
+      path: /home/ubuntu/nikhil/deploy.txt
+      state: touch
 ...
