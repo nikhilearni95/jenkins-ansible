@@ -1,5 +1,5 @@
 ---
-- hosts: UAT
+- hosts: webservers
   tasks:
   - name: Creating an empty file
     file:
