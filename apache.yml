@@ -3,6 +3,6 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: /home/centos/nikhil/deploy.txt
+      path: /opt/wildfly/standalone/deployments/deploy.txt
       state: touch
 ...
