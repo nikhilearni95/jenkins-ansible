@@ -3,7 +3,7 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: /home/ubuntu/nikhil/deploy.txt
+      path: /root/nikhil/deploy.txt
       state: touch
 ...
 
